@@ -20,16 +20,21 @@ def divide(num1, num2):
 def Square(num1): 
 	return num1 ** 2 
 
-print("Please select operation -\n" \ 
-		"1. Add\n" \ 
-		"2. Subtract\n" \ 
-		"3. Multiply\n" \ 
-		"4. Divide\n" \
-     		"5. Square\n") 
+# Function to Cub numbers 
+def Cub(num1): 
+	return num1 ** 3 
+
+print("Please select operation -\n" 
+		"1. Add\n" 
+		"2. Subtract\n"
+		"3. Multiply\n" 
+		"4. Divide\n" 
+		"5. Square\n"
+         "6. Cub\n") 
 
 
 # Take input from the user 
-select = input("Select operations form 1, 2, 3, 4, 5 :") 
+select = input("Select operations form 1, 2, 3, 4, 5, 6 :") 
 
 number_1 = int(input("Enter first number: ")) 
 number_2 = int(input("Enter second number: ")) 
@@ -53,6 +58,10 @@ elif select == '4':
 	
 elif select == '5': 
 	print(number_1, "**", 2, "=", 
-					Square(number_1)) 
+					Square(number_1))
+    
+elif select == '6': 
+	print(number_1, "**", 3, "=", 
+					Cub(number_1))
 else: 
 	print("Invalid input") 
