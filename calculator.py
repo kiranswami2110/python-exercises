@@ -52,7 +52,7 @@ elif select == '4':
 					divide(number_1, number_2)) 
 	
 elif select == '5': 
-	print(number_1, "*", 2, "=", 
+	print(number_1, "**", 2, "=", 
 					Square(number_1)) 
 else: 
 	print("Invalid input") 
