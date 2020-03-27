@@ -14,17 +14,22 @@ def multiply(num1, num2):
 
 # Function to divide two numbers 
 def divide(num1, num2): 
-	return num1 / num2 
+	return num1 / num2
+
+# Function to Square numbers 
+def Square(num1): 
+	return num1 ** 2 
 
 print("Please select operation -\n" \ 
 		"1. Add\n" \ 
 		"2. Subtract\n" \ 
 		"3. Multiply\n" \ 
-		"4. Divide\n") 
+		"4. Divide\n" \
+     		"5. Square\n") 
 
 
 # Take input from the user 
-select = input("Select operations form 1, 2, 3, 4 :") 
+select = input("Select operations form 1, 2, 3, 4, 5 :") 
 
 number_1 = int(input("Enter first number: ")) 
 number_2 = int(input("Enter second number: ")) 
@@ -41,8 +46,13 @@ elif select == '3':
 	print(number_1, "*", number_2, "=", 
 					multiply(number_1, number_2)) 
 
+
 elif select == '4': 
 	print(number_1, "/", number_2, "=", 
 					divide(number_1, number_2)) 
+	
+elif select == '5': 
+	print(number_1, "*", 2, "=", 
+					Square(number_1)) 
 else: 
 	print("Invalid input") 
